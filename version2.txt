@@ -1,0 +1,4 @@
+#	filename/dirname		line #	before			after			comments
+1	backup.m			line1	clear			clear;			clear后没分号我很难过
+2	localization			文件夹名改为“data”				把所有的数据放在子文件夹中
+3	train_test_generate.m	line 11	file_path = '.';		file_path = './data';		与#2改动对应
