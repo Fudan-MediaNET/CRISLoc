@@ -2,6 +2,19 @@
 This repository is the channel state information (CSI) dataset for
 [CRISLoc: Reconstructable CSI Fingerprinting for Indoor Smartphone Localization](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9187854), which is collected by Nexus 5 based on [Nexmon](https://github.com/seemoo-lab/nexmon_csi).
 
+If this dataset hepls your research, please cite the paper in your publications. : )
+
+    @article{gao2020crisloc,
+      title={CRISLoc: Reconstructable CSI fingerprinting for indoor smartphone localization},
+      author={Gao, Zhihui and Gao, Yunfan and Wang, Sulei and Li, Dan and Xu, Yuedong},
+      journal={IEEE Internet of Things Journal},
+      volume={8},
+      number={5},
+      pages={3422--3437},
+      year={2020},
+      publisher={IEEE}
+    }
+
 ### CSI Data
 The CSI data are stored in either `research_laboratory_APX.mat` or `academic_building_APX.mat`, where `X` is the index of APs, ranging from $1$ to $9$ or $10$ for the two scenarios.
 Within each file, we have a double matrix of `number of data x number of subcarriers` as collected CSI _amplitude_. We only present `number of subcarrier` as 49 for the 49 effective subcarriers. Note that all the CSI data are pre-processed as mentioned in the paper, including the frame filtering and CSI calibration (by RSS, and it can be negative). 
